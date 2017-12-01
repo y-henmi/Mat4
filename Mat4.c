@@ -18,7 +18,7 @@ Matrix4 Matrix4Make(float m00, float m01, float m02, float m03,
 /**
  * GLKMatrix4Multiply 
  **/
-Matrix4 GLKMatrix4Multiply(Matrix4 matrixLeft, Matrix4 matrixRight)
+Matrix4 Matrix4Multiply(Matrix4 matrixLeft, Matrix4 matrixRight)
 {
     Matrix4 m;
     
@@ -83,5 +83,5 @@ Matrix4 Matrix4MakeYRotation(float radians)
 Matrix4 Matrix4RotateY(Matrix4 matrix, float radians)
 {
     Matrix4 rm = Matrix4MakeYRotation(radians);
-    return GLKMatrix4Multiply(matrix, rm);
+    return Matrix4Multiply(matrix, rm);
 }

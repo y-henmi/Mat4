@@ -20,7 +20,7 @@ int main(void){
     printf("Y Rotation Matrix: %lf\n", yRot.m00);
     
     // Multiply
-    Matrix4 mul = GLKMatrix4Multiply(xRot, yRot);
+    Matrix4 mul = Matrix4Multiply(xRot, yRot);
     printf("Multiply: %lf\n", mul.m00);
     
     // Y Rotation

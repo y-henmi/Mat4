@@ -28,7 +28,7 @@ Matrix4 Matrix4Make(float m00, float m01, float m02, float m03,
 /**
  * GLKMatrix4Multiply 
  **/
-Matrix4 GLKMatrix4Multiply(Matrix4 matrixLeft, Matrix4 matrixRight);
+Matrix4 Matrix4Multiply(Matrix4 matrixLeft, Matrix4 matrixRight);
 
 /**
  * GLKMatrix4MakeXRotation 
