@@ -81,9 +81,9 @@ Matrix4 Matrix4MakeYRotation(float radians)
     float c = cosf(radians);
     float s = sinf(radians);
     
-    Matrix4 m = { c, s, 0.0f, 0.0f,
-                  -s, c, 0.0f, 0.0f,
-                  0.0f, 0.0f, 1.0f, 0.0f,
+    Matrix4 m = { c, 0.0f, -s, 0.0f,
+                  0.0f, 1.0f, 0.0f, 0.0f,
+                  s, 0.0f, c, 0.0f,
                   0.0f, 0.0f, 0.0f, 1.0f };
     
     return m;
