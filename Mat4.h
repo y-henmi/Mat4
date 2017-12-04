@@ -18,7 +18,7 @@ union _Matrix4
 typedef union _Matrix4 Matrix4;
 
 /**
- * GLKMatrix4Make 
+ * GLKMatrix4Make
  **/
 Matrix4 Matrix4Make(float m00, float m01, float m02, float m03,
                     float m10, float m11, float m12, float m13,
@@ -26,21 +26,26 @@ Matrix4 Matrix4Make(float m00, float m01, float m02, float m03,
                     float m30, float m31, float m32, float m33);
 
 /**
- * GLKMatrix4Multiply 
+ * GLKMatrix4MakeWithArray
+ **/
+Matrix4 Matrix4MakeWithArray(float values[16]);
+
+/**
+ * GLKMatrix4Multiply
  **/
 Matrix4 Matrix4Multiply(Matrix4 matrixLeft, Matrix4 matrixRight);
 
 /**
- * GLKMatrix4MakeXRotation 
+ * GLKMatrix4MakeXRotation
  **/
 Matrix4 Matrix4MakeXRotation(float radians);
 
 /**
- * GLKMatrix4MakeYRotation 
+ * GLKMatrix4MakeYRotation
  **/
 Matrix4 Matrix4MakeYRotation(float radians);
 
 /**
- * GLKMatrix4RotateY 
+ * GLKMatrix4RotateY
  **/
 Matrix4 Matrix4RotateY(Matrix4 matrix, float radians);
